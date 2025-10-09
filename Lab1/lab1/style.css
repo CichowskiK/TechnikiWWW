@@ -1,0 +1,13 @@
+body {
+    background-color: aliceblue;
+    display: flex;
+}
+
+main {
+    display: flex;
+    width: 60px;
+}
+
+aside {
+    justify-content: end;
+}
