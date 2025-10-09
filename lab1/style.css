@@ -1,0 +1,89 @@
+/* Reset podstawowy */
+* {  /* * oznacza że stosuję się do wszystkiego*/
+    margin: 0;
+    padding: 0;
+}
+
+/* Ustawienia ogólne strony */
+body { /*główny element w którym są wszystkie tagi*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /*czcionka*/
+    background-color: #f5f6fa;  /*kolor tła*/
+    color: #2f3640;  /*kolor tekstu*/
+    display: flex;   /*żeby nie było wyświetlania blokowego, pozwala nam to np wrzucić dwa tagi na tą samą wysokość*/
+    flex-direction: column;  /*układamy flexa z linijki wyżej na kolumne, czyli układają nam się tagi w kolumne zamiast od lewej do prawej*/
+    align-items: center;  /*Wszystko co jest w środku ustawiamy w centrum*/
+    min-height: 100vh;  /*minimalna wysokość to 100% wysokości okienka w którym wyświetlamy*/
+}
+
+/* Nagłówek */
+header {
+    width: 100%;  /* zajmuje całą dostępną szerokość */
+    background-color: #273c75;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {  /* ta reguła stosuje się do tagów <h1> w tagu <header>*/
+    font-size: 2rem;      /*wielkość czcionki 2 * root element*/
+    letter-spacing: 1px;  /*przerwa między literami = 1 piksel*/
+}
+
+/* Układ główny */
+main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;   /* przerwa między elementami w środku main*/
+    width: 80%;
+    margin-top: 40px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Sekcja o sobie */
+section div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;   /* zaokrąglenie granic elementu*/
+    width: 400px;
+    font-size: 1.1rem;
+}
+
+section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;  /* zdjęcie w kółku */
+    border: 3px solid #273c75;
+}
+
+nav {
+    width: 100vw;
+    background-color: #333;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Styl pojedynczego elementu listy */
+nav ul li {
+    margin: auto;  /* automatycznie układa nam się margines żeby było równo*/
+}
+
+/* Linki w pasku */
+nav ul li a {
+    display: block;  /* żeby sie nam te linki pokazywały w ładnym bloczku*/
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;  /* usuwamy podkreślenie linku*/
+}
+
+nav ul li a:hover {  /*uruchamia się tylko wtedy kiedy najedziemy*/
+    background-color: #4a90e2;
+}
