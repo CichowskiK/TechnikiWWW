@@ -24,6 +24,33 @@ header {
     padding: 20px 0;
 }
 
+footer {
+    width: 100%;  /* zajmuje całą dostępną szerokość */
+    background-color: #273c75;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+}
+
+footer h1 {
+    font-size: 2rem;      /*wielkość czcionki 2 * root element*/
+    letter-spacing: 1px;  /*przerwa między literami = 1 piksel*/
+    margin: auto;
+}
+
+a {
+    max-width: 50vw;
+    display: block;  /* żeby sie nam te linki pokazywały w ładnym bloczku*/
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;  /* usuwamy podkreślenie linku*/
+}
+
+a:hover {  /*uruchamia się tylko wtedy kiedy najedziemy*/
+    background-color: #4a90e2;
+}
+
 header h1 {  /* ta reguła stosuje się do tagów <h1> w tagu <header>*/
     font-size: 2rem;      /*wielkość czcionki 2 * root element*/
     letter-spacing: 1px;  /*przerwa między literami = 1 piksel*/
@@ -36,6 +63,7 @@ main {
     gap: 30px;   /* przerwa między elementami w środku main*/
     width: 80%;
     margin-top: 40px;
+    flex: 1;  /* zajmuje tyle miejsca ile może*/
 }
 
 section {
@@ -74,16 +102,4 @@ nav ul {
 /* Styl pojedynczego elementu listy */
 nav ul li {
     margin: auto;  /* automatycznie układa nam się margines żeby było równo*/
-}
-
-/* Linki w pasku */
-nav ul li a {
-    display: block;  /* żeby sie nam te linki pokazywały w ładnym bloczku*/
-    padding: 14px 20px;
-    color: white;
-    text-decoration: none;  /* usuwamy podkreślenie linku*/
-}
-
-nav ul li a:hover {  /*uruchamia się tylko wtedy kiedy najedziemy*/
-    background-color: #4a90e2;
 }
