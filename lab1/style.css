@@ -77,12 +77,12 @@ section div {
     background-color: white;
     padding: 20px;
     border-radius: 12px;   /* zaokrąglenie granic elementu*/
-    width: 400px;
+    max-width: 400px;  
     font-size: 1.1rem;
 }
 
 section img {
-    width: 200px;
+    max-width: 200px;
     height: 200px;
     border-radius: 50%;  /* zdjęcie w kółku */
     border: 3px solid #273c75;
