@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <header>
-
+        <h1>Nazwa naszej strony, obraz w tle można zmienić</h1>
     </header>
     <nav>
         <ul>
             <li><a href="index.html">Strona Główna</a></li>
-            <li><a href="treningiGrupowe.html">Treningi Grupowe</a></li>
-            <li><a href="trenerzy.html">Trenerzy</a></li>
+            <li class="dropdown">
+                <a>Treningi Grupowe</a>
+                <ul class="submenu">
+                    <li><a>opcja 1</a></li>
+                    <li><a>opcja 2</a></li>
+                    <li><a>opcja 3</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Trenerzy</a>
+                <ul class="submenu">
+                    <li><a>Trener 1</a></li>
+                    <li><a>Trener 2</a></li>
+                    <li><a>Trener 3</a></li>
+                </ul>
+            </li>
             <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
     </nav>
     <main>
         <section>
-            o nas
+            <h1></h1>
         </section>
         <section>
             
