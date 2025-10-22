@@ -3,6 +3,20 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 header {
     height: 125px;
     background-image: url("https://tse4.mm.bing.net/th/id/OIP.bGa-Su7vft6HKX5fnmZBvgHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3");
@@ -62,4 +76,22 @@ nav ul li a:hover {
 
 .submenu li a:hover {
   background-color: #666;
+}
+
+main {
+  flex: 1;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  max-width: 30vw;
+  margin: 1.5vw;
+}
+
+footer {
+  height: 10px;
+  background-color: hsl(240, 100%, 40%);
 }
