@@ -1,6 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Roboto;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: hsl(35, 50%, 95%);
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+h2 {
+  padding: 10px;
+}
+
+p {
+  padding-left: 15px;
+  line-height: 1.4;
 }
 
 header {
@@ -62,4 +87,22 @@ nav ul li a:hover {
 
 .submenu li a:hover {
   background-color: #666;
+}
+
+main {
+  flex: 1;
+}
+
+.images {
+  display: flex;
+}
+
+.images img {
+  max-width: 30vw;
+  margin: 1.5vw;
+}
+
+footer {
+  height: 10px;
+  background-color: hsl(240, 100%, 40%);
 }
