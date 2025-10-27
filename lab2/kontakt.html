@@ -4,9 +4,52 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kontakt</title>
 </head>
-<body>
-    
+<body class="home-page">
+    <header>
+        <h1>abc</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="treningiGrupowe.html">Treningi Grupowe</a></li>
+            <li class="dropdown">
+                <a href="trenerzy.html">Trenerzy</a>
+                <ul class="submenu">
+                    <li><a href="trener1.html">Trener 1</a></li>
+                    <li><a href="trener2.html">Trener 2</a></li>
+                    <li><a href="trener3.html">Trener 3</a></li>
+                </ul>
+            </li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-form">
+    <p>Imię</p>
+    <input type="text" name="firstname" placeholder="Twoje imię">
+
+    <p>Nazwisko</p>
+    <input type="text" name="lastname" placeholder="Twoje nazwisko">
+
+    <p>Temat</p>
+    <select name="topic">
+        <option value="">kontakt</option>
+        <option value="group">trening Grupowy</option>
+        <option value="indywidual">trening indywidualny</option>
+        <option value="other">Inny</option>
+    </select>
+
+    <p>Wiadomość</p>
+    <textarea name="subject" placeholder="Napisz coś..." style="height:200px"></textarea>
+
+    <input type="submit" value="Wyślij">
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025 Szkoła Tenisa Stołowego. Wszelkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>
