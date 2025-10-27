@@ -364,11 +364,19 @@ footer p {
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); 
 }
 
 .przycisk-zapisz-sie:hover {
     background-color: #990000;
+    
+    transform: translateY(-3px); 
+    
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 
