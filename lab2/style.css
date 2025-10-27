@@ -112,6 +112,7 @@ footer {
     display: grid;
     grid-template-areas: "header header header"
     "image content content"
+    "header2 header2 header2"
     "tre1 tre2 tre3";
 
     grid-template-columns: 1fr 1fr 1fr;
@@ -144,14 +145,31 @@ footer {
   object-fit: cover;
 }
 
-.container .content p{
-  font-size: 1.5rem;
+.container div.tre1{
+  grid-area: tre1;
+}
+
+.container div.tre2{
+  grid-area: tre2;
+}
+
+.container div.tre3{
+  grid-area: tre3;
+}
+
+.container div.header2{
+  grid-area: header2;
+  text-align: center;
+}
+
+.container p{
+  font-size: 1.4rem;
 }
 
 .container h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .container h2{
-  font-size: 3rem;
+  font-size: 2rem;
 }
